@@ -111,6 +111,8 @@ ladydream-whatsapp/
 - Acesso ao n8n  
 - Template do WhatsApp previamente aprovado  
 
+---
+
 ##  🔐 Segurança
 
 -.env nunca vai pro Git
