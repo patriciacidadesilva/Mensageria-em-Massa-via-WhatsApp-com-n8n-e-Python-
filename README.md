@@ -111,43 +111,6 @@ ladydream-whatsapp/
 - Acesso ao n8n  
 - Template do WhatsApp previamente aprovado  
 
----
-______________________________________________________________________________
-## 🚀 Como Executar
-
-### 1️⃣ Acessar a pasta do projeto
-```bash
-cd caminho/ladydream-whatsapp
-
-
-### 2️⃣ Criar e ativar o ambiente virtual
-```bash
-py -m venv .venv
-source .venv/Scripts/activate
-
-### 3️⃣ Instalar as dependências
-```bash
-py -m pip install -U pip
-py -m pip install -r requirements.txt
-
-### 4️⃣ Configurar variáveis de ambiente
-```bash
-cp .env.example .env
-
-Preencha o .env com:
--Caminho da planilha
--Caminho da imagem
--URLs do n8n
-Credenciais (se necessário)
-⚠️ Nunca versionar o .env.
-
-### 5️⃣ Executar o disparo
-```bash
-py src/disparo_saudacao.py
-_____________________________________________________________________________
-
----
-
 ##  🔐 Segurança
 
 -.env nunca vai pro Git
@@ -179,3 +142,37 @@ Essas informações facilitam:
 -Execução paralela com controle de throughput
 -Evitar reenvio para contatos já processados
 -Suporte a múltiplos templates e campanhas
+
+---
+
+## 🚀 Como Executar
+
+### 1️⃣ Acessar a pasta do projeto
+```bash
+cd caminho/ladydream-whatsapp
+
+
+### 2️⃣ Criar e ativar o ambiente virtual
+```bash
+py -m venv .venv
+source .venv/Scripts/activate
+
+### 3️⃣ Instalar as dependências
+```bash
+py -m pip install -U pip
+py -m pip install -r requirements.txt
+
+### 4️⃣ Configurar variáveis de ambiente
+```bash
+cp .env.example .env
+
+Preencha o .env com:
+-Caminho da planilha
+-Caminho da imagem
+-URLs do n8n
+Credenciais (se necessário)
+⚠️ Nunca versionar o .env.
+
+### 5️⃣ Executar o disparo
+```bash
+py src/disparo_saudacao.py
