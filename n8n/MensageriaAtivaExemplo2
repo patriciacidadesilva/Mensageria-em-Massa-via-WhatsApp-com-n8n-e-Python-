@@ -4,7 +4,7 @@
     {
       "parameters": {
         "httpMethod": "POST",
-        "path": "SEU_WEBHOOK_MENSAGERIA_ATIVA",
+        "path": "SEU_WEBHOOK_MENSAGERIA",
         "responseMode": "responseNode",
         "options": {}
       },
@@ -19,7 +19,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://graph.facebook.com/v22.0/PHONE_NUMBER_ID/messages",
+        "url": "https://graph.facebook.com/v22.0/SEU_PHONE_NUMBER_ID/messages",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
