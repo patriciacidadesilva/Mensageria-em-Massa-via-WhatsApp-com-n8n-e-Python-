@@ -131,17 +131,26 @@ Essas informações facilitam:
 ladydream-whatsapp/
 ├── src/
 │   └── disparo_saudacao.py          # Script principal (Python)
+│
 ├── assets/
 │   └── imagem_saudacao_ladydream.png
+│
 ├── data/
 │   └── Telefones.xlsx               # Base de contatos (exemplo)
+│
 ├── n8n/
-│   ├── PostImagem.json              # Upload da imagem
-│   └── MensageriaAtiva.json         # Disparo do template
+│   ├── PostImagem/
+│   │   ├── PostImagem.json          # Workflow: upload da imagem
+│   │   └── README PostImagem.md      # Documentação do workflow PostImagem
+│   │
+│   ├── MensageriaAtiva/
+│   │   ├── MensageriaAtiva.json     # Workflow: disparo do template
+│   │   └── README MensageriaAtiva.md # Documentação do workflow MensageriaAtiva
+│
 ├── .env.example                     # Modelo de configuração
 ├── .gitignore                       # Proteção de segredos
 ├── requirements.txt                 # Dependências
-└── README.md                        # Documentação
+└── README.md                        # Documentação principal
 
 ---
 
