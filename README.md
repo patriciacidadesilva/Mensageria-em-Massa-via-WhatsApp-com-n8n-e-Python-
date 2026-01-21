@@ -159,21 +159,24 @@ ladydream-whatsapp/
 ### 1️⃣ Acessar a pasta do projeto
 ```bash
 cd caminho/ladydream-whatsapp
-
+```md
 
 ### 2️⃣ Criar e ativar o ambiente virtual
 ```bash
 py -m venv .venv
 source .venv/Scripts/activate
+```md
 
 ### 3️⃣ Instalar as dependências
 ```bash
 py -m pip install -U pip
 py -m pip install -r requirements.txt
+```md
 
 ### 4️⃣ Configurar variáveis de ambiente
 ```bash
 cp .env.example .env
+```md
 
 Preencha o .env com:
 ⚡Caminho da planilha
@@ -185,3 +188,4 @@ Preencha o .env com:
 ### 5️⃣ Executar o disparo
 ```bash
 py src/disparo_saudacao.py
+```md
