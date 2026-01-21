@@ -56,24 +56,24 @@ WhatsApp Cloud API
 ---
 
 ladydream-whatsapp/
-.
 ├── src/
-│   └── disparo_saudacao.py          # Script principal
+│   └── disparo_saudacao.py          # Script principal (Python)
 │
 ├── assets/
-│   └── imagem_saudacao_ladydream.png
+│   └── imagem_saudacao_ladydream.png # Imagem de saudação enviada via WhatsApp
 │
 ├── data/
-│   └── Telefones.xlsx               # Base de contatos
+│   └── Telefones.xlsx               # Base de contatos (exemplo)
 │
 ├── n8n/
-│   ├── PostImagem.json              # Workflow de upload da imagem
-│   └── MensageriaAtiva.json         # Workflow de envio do template
+│   ├── PostImagem.json              # Workflow n8n: upload da imagem
+│   └── MensageriaAtiva.json         # Workflow n8n: disparo da mensagem
 │
-├── .env.example                     # Exemplo de configuração
-├── .gitignore                       # Proteção de dados sensíveis
-├── requirements.txt                 # Dependências
-└── README.md
+├── .env.example                     # Variáveis de ambiente (modelo)
+├── .gitignore                       # Exclusão de dados sensíveis
+├── requirements.txt                 # Dependências Python
+└── README.md                        # Documentação do projeto
+
 
 ---
 
