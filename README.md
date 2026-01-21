@@ -151,8 +151,10 @@ ladydream-whatsapp/
 ├── .gitignore                       # Proteção de segredos
 ├── requirements.txt                 # Dependências
 └── README.md                        # Documentação principal
+```
 
 ---
+
 
 ## 🚀 Como Executar
 
