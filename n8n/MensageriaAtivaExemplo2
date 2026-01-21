@@ -25,13 +25,13 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer EAASHZ..."
+              "value": "Bearer EAU...."
             }
           ]
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={ ... }",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"recipient_type\": \"individual\",\n  \"to\": \"{{ $json.body.wa_id }}\",\n  \"type\": \"template\",\n  \"template\": {\n    \"name\": \"mensageria_saudacao\",\n    \"language\": {\n      \"code\": \"pt_BR\"\n    },\n    \"components\": [\n      {\n        \"type\": \"header\",\n        \"parameters\": [\n          {\n            \"type\": \"image\",\n            \"image\": {\n              \"id\": \"{{ $json.body.media_id }}\"\n            }\n          }\n        ]\n      }\n    ]\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -53,12 +53,39 @@
       "name": "Respond to Webhook"
     }
   ],
+  "pinData": {},
   "connections": {
     "Webhook": {
-      "main": [[{ "node": "HTTP Request3", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "HTTP Request3": {
-      "main": [[{ "node": "Respond to Webhook", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
-  }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "versionId",
+  "meta": {
+    "instanceId": "instanceId"
+  },
+  "id": "id",
+  "tags": []
 }
