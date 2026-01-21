@@ -1,0 +1,65 @@
+# 📦 O que é `requirements.txt`
+
+O `requirements.txt` é o **arquivo que define as dependências do projeto em Python**.  
+Ele lista **todas as bibliotecas necessárias** para que o código funcione corretamente.
+
+Em outras palavras:  
+é o **contrato de execução do projeto**.
+
+> Se alguém clonar este repositório e instalar o `requirements.txt`,  
+> o ambiente ficará **idêntico ao ambiente em que o projeto foi desenvolvido**.
+
+---
+
+## 🎯 Para que serve (na prática)
+
+O `requirements.txt` garante que:
+
+- O projeto rode **sem erro de biblioteca ausente**
+- Todos usem **as mesmas versões** de dependências
+- O ambiente seja **reproduzível** (local, servidor, CI/CD)
+- O código funcione igual para você, para outro dev ou em produção
+
+Sem ele, cada pessoa roda o projeto de um jeito diferente —  
+o que gera erros difíceis de rastrear.
+
+---
+
+## 🧠 Boas práticas adotadas neste projeto
+
+- Apenas bibliotecas **realmente utilizadas** foram listadas  
+- Dependências ficam **fora do código-fonte**
+- Instalação padronizada com um único comando
+- Facilita manutenção, deploy e escalabilidade
+
+---
+
+## 🚀 Como usar
+
+Após clonar o repositório e ativar o ambiente virtual:
+
+```bash
+pip install -r requirements.txt
+
+Esse comando instala todas as dependências necessárias de uma vez.
+
+---
+
+## 📄 Conteúdo do requirements.txt
+Abaixo estão as bibliotecas utilizadas neste projeto e o motivo de cada uma:
+pandas          # Leitura e manipulação da planilha Excel com os telefones
+python-dotenv   # Carregamento seguro das variáveis de ambiente (.env)
+requests        # Comunicação HTTP com os webhooks do n8n
+openpyxl        # Engine usada pelo pandas para ler arquivos .xlsx
+
+---
+
+## ✅ Em resumo
+O requirements.txt:
+
+-Padroniza o ambiente de execução
+-Evita erros por dependências ausentes
+-Facilita colaboração e manutenção
+-É essencial para projetos profissionais e produtivos
+
+Sem ele, o projeto não é reproduzível.
