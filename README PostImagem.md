@@ -27,6 +27,14 @@ Ele é chamado **primeiro** pelo script Python.
 
 ---
 
+## ✅ Resultado
+
+-O Python recebe apenas { "media_id": "xxxx" }
+-Nenhum segredo exposto
+-Workflow reutilizável para qualquer campanha
+
+---
+
 ## 📄 Versão sanitizada para GitHub (`PostImagem.json`)
 
 ```json
@@ -80,12 +88,3 @@ Ele é chamado **primeiro** pelo script Python.
       "main": [[{ "node": "Return media_id", "type": "main", "index": 0 }]]
     }
   }
-}
-
----
-
-## ✅ Resultado
-
--O Python recebe apenas { "media_id": "xxxx" }
--Nenhum segredo exposto
--Workflow reutilizável para qualquer campanha
