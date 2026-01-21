@@ -53,10 +53,9 @@ WhatsApp Cloud API
 - `.env.example` → modelo de configuração
 - `requirements.txt` → dependências
 
+---
 
 ladydream-whatsapp/
-
-
 .
 ├── src/
 │   └── disparo_saudacao.py          # Script principal
@@ -75,7 +74,6 @@ ladydream-whatsapp/
 ├── .gitignore                       # Proteção de dados sensíveis
 ├── requirements.txt                 # Dependências
 └── README.md
-
 
 ---
 
