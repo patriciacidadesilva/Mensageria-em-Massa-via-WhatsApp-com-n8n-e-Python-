@@ -181,11 +181,11 @@ cp .env.example .env
 ```
 
 Preencha o .env com:
-⚡Caminho da planilha
-⚡Caminho da imagem
-⚡URLs do n8n
-⚡Credenciais (se necessário)
-⚠️ Nunca versionar o .env.
+- Caminho da planilha
+- Caminho da imagem
+- URLs do n8n
+- Credenciais (se necessário)
+- ⚠️ Nunca versionar o .env.
 
 ### 5️⃣ Executar o disparo
 ```bash
