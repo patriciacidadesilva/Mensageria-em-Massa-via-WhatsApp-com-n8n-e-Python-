@@ -115,35 +115,33 @@ ladydream-whatsapp/
 
 ##  🔐 Segurança
 
--.env nunca vai pro Git
--tokens/segredos ficam no n8n (credentials)
--logs não devem imprimir credenciais
+- .env nunca vai pro Git
+- tokens/segredos ficam no n8n (credentials)
+- logs não devem imprimir credenciais
 
 ---
 
 ##  🧪 Observabilidade (logs)
 
-🧪 Logs e Acompanhamento
-
 Durante a execução, o script exibe:
--Confirmação do upload da imagem (media_id)
--Progresso do envio
--Falhas por contato (quando ocorrer)
+- Confirmação do upload da imagem (media_id)
+- Progresso do envio
+- Falhas por contato (quando ocorrer)
 
 Essas informações facilitam:
--Auditoria
--Debug
--Reprocessamento
+- Auditoria
+- Debug
+- Reprocessamento
 
 ---
 
 ##  🛣️ Roadmap
 
--Validação automática de telefones (E.164)
--Relatório CSV de falhas
--Execução paralela com controle de throughput
--Evitar reenvio para contatos já processados
--Suporte a múltiplos templates e campanhas
+- Validação automática de telefones (E.164)
+- Relatório CSV de falhas
+- Execução paralela com controle de throughput
+- Evitar reenvio para contatos já processados
+- Suporte a múltiplos templates e campanhas
 
 ---
 
