@@ -147,7 +147,7 @@ py src/disparo_saudacao.py
 ---
 
 
-## 🔐 Segurança
+##  🔐 Segurança
 
 -.env nunca vai pro Git
 -tokens/segredos ficam no n8n (credentials)
@@ -155,7 +155,7 @@ py src/disparo_saudacao.py
 
 ---
 
-## 🧪 Observabilidade (logs)
+##  🧪 Observabilidade (logs)
 
 🧪 Logs e Acompanhamento
 
@@ -171,7 +171,7 @@ Essas informações facilitam:
 
 ---
 
-##🛣️ Roadmap
+##  🛣️ Roadmap
 
 -Validação automática de telefones (E.164)
 -Relatório CSV de falhas
