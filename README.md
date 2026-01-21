@@ -55,27 +55,6 @@ WhatsApp Cloud API
 
 ---
 
-## 📁 Árvore do Repositório
-
-```text
-ladydream-whatsapp/
-├── src/
-│   └── disparo_saudacao.py          # Script principal (Python)
-├── assets/
-│   └── imagem_saudacao_ladydream.png
-├── data/
-│   └── Telefones.xlsx               # Base de contatos (exemplo)
-├── n8n/
-│   ├── PostImagem.json              # Upload da imagem
-│   └── MensageriaAtiva.json         # Disparo do template
-├── .env.example                     # Modelo de configuração
-├── .gitignore                       # Proteção de segredos
-├── requirements.txt                 # Dependências
-└── README.md                        # Documentação
-
-
----
-
 ## 🧱 Princípios do Projeto
 
 ### ♻️ Reutilizável
@@ -143,6 +122,26 @@ Essas informações facilitam:
 - Execução paralela com controle de throughput
 - Evitar reenvio para contatos já processados
 - Suporte a múltiplos templates e campanhas
+
+---
+
+## 🌳 Árvore do Repositório
+
+```text
+ladydream-whatsapp/
+├── src/
+│   └── disparo_saudacao.py          # Script principal (Python)
+├── assets/
+│   └── imagem_saudacao_ladydream.png
+├── data/
+│   └── Telefones.xlsx               # Base de contatos (exemplo)
+├── n8n/
+│   ├── PostImagem.json              # Upload da imagem
+│   └── MensageriaAtiva.json         # Disparo do template
+├── .env.example                     # Modelo de configuração
+├── .gitignore                       # Proteção de segredos
+├── requirements.txt                 # Dependências
+└── README.md                        # Documentação
 
 ---
 
