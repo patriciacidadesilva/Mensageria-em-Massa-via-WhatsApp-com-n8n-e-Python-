@@ -19,6 +19,10 @@ Ele recebe do Python:
 → Disparo do template  
 → Retorno do status
 
+### Imagem do Fluxo dentro do N8N
+
+<img width="1145" height="457" alt="image" src="https://github.com/user-attachments/assets/0a503360-c45d-40f1-bb01-de456b82d93e" />
+
 ---
 
 ## 🔐 Segurança aplicada
