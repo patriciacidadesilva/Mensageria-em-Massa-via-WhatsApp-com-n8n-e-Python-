@@ -35,6 +35,32 @@ Ele é chamado **primeiro** pelo script Python.
 
 ---
 
+## 🧩 PostImagem.json — o que é cada campo 
+
+### `path` (Webhook)
+- **O que é:** o caminho do endpoint no n8n.
+- **De onde vem:** você define no nó Webhook (ou o n8n sugere um valor).
+- **Por que não versionar o real:** expõe o endpoint do seu ambiente.
+- **Como usar no projeto:** no Git usamos `SEU_WEBHOOK_POST_IMAGEM` e no `.env` você coloca a URL real (`URL_N8N_IMG_POST`).
+
+### `phoneNumberId`
+- **O que é:** ID do número de WhatsApp que envia mensagens (não é o telefone).
+- **De onde vem:** WhatsApp Cloud API / Meta Business (Phone Number ID).
+- **Por que não versionar o real:** amarra o workflow a um ambiente/conta e expõe infraestrutura.
+- **Como configurar:** substituir `SEU_PHONE_NUMBER_ID` no n8n conforme seu número.
+
+### `credentials.whatsAppApi`
+- **O que é:** referência à Credential do n8n (onde ficam os tokens/segredos).
+- **Como deve ficar no Git:** **apenas o `name`**, sem `id`.
+- **Por quê:** o `id` é interno do n8n e pode indicar uma credencial real do ambiente.
+
+### `id` e `webhookId`
+- **O que são:** metadados internos gerados pelo n8n (não são lógica do fluxo).
+- **Por que removemos:** reduzem ruído e evitam expor detalhes do ambiente.
+- **Importante:** o n8n recria esses IDs automaticamente ao importar.
+
+---
+
 ## 📄 Versão sanitizada para GitHub (`PostImagem.json`)
 
 ```json
