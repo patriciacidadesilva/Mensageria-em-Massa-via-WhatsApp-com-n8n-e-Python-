@@ -1,0 +1,75 @@
+{
+  "name": "PostImagem",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "SEU_WEBHOOK_POST_IMAGEM",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-50, 0],
+      "name": "Webhook"
+    },
+    {
+      "parameters": {
+        "resource": "media",
+        "phoneNumberId": "SEU_PHONE_NUMBER_ID",
+        "mediaPropertyName": "file",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1,
+      "position": [200, 0],
+      "name": "Upload Media",
+      "credentials": {
+        "whatsAppApi": {
+          "name": "WhatsApp Cloud API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { \"media_id\": $json.id } }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [450, 0],
+      "name": "Retornar media_id"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Upload Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Media": {
+      "main": [
+        [
+          {
+            "node": "Retornar media_id",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
