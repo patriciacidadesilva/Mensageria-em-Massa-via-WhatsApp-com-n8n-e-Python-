@@ -1,0 +1,79 @@
+%md
+# 🔐 O que é `.gitignore`
+
+O `.gitignore` é um **arquivo de governança do Git**.  
+Ele define **o que NÃO deve entrar no repositório**, mesmo existindo localmente na sua máquina.
+
+Pense nele como um **firewall de versionamento**:
+
+> Tudo que é sensível, temporário ou específico do seu ambiente  
+> **fica fora do Git**.
+
+---
+
+## 🎯 Para que serve (na prática)
+
+O `.gitignore` evita que você:
+
+- Suba **senhas, tokens e credenciais**
+- Versione **bases de clientes** (Excel, CSV)
+- Polua o repositório com **lixo técnico** (cache, logs, `.venv`)
+- Quebre requisitos de **segurança, LGPD ou compliance** sem perceber
+
+---
+
+## ✅ Em resumo
+
+O `.gitignore` **protege você, o projeto e a empresa**,  
+garantindo um repositório **seguro, limpo e profissional**.
+
+# ==========================================================
+# 🔐 SEGURANÇA / COMPLIANCE
+# Por quê: impede que segredos (tokens, senhas) vazem no Git
+# ==========================================================
+.env                 # Seu arquivo real com credenciais (NUNCA versionar)
+.env.*               # Bloqueia variações (ex: .env.prod, .env.local)
+!.env.example        # EXCEÇÃO: o exemplo pode ir pro Git (documentação)
+
+# ==========================================================
+# 📊 DADOS / CONTATOS (LGPD)
+# Por quê: evita subir base de clientes/telefones por acidente
+# ==========================================================
+data/                # Pasta de dados local (contatos, exports, etc.)
+*.xlsx               # Planilhas (ex: Telefones.xlsx)
+*.csv                # CSVs (muito comum em bases)
+*.json               # JSONs de export (às vezes contém PII)
+
+# ==========================================================
+# 🐍 PYTHON: AMBIENTE VIRTUAL + CACHE
+# Por quê: venv é específico da sua máquina; cache é lixo de build
+# ==========================================================
+.venv/               # Ambiente virtual recomendado
+venv/                # Alternativa comum
+__pycache__/         # Cache do Python
+*.py[cod]            # Bytecode: .pyc/.pyo/.pyd
+
+# ==========================================================
+# 🧾 LOGS / TEMP
+# Por quê: logs e temporários mudam toda hora e poluem commits
+# ==========================================================
+*.log
+*.tmp
+*.temp
+
+# ==========================================================
+# 🧠 IDE / EDITOR
+# Por quê: configurações locais não fazem parte do produto
+# ==========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================================
+# 💻 SISTEMA OPERACIONAL
+# Por quê: arquivos invisíveis criados pelo OS não são do projeto
+# ==========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
