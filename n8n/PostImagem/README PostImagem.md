@@ -18,7 +18,7 @@ Ele é chamado **primeiro** pelo script Python.
 → Retorno do `media_id`
 
 
-### [Imagem do Fluxo dentro do N8N]
+### Imagem do Fluxo dentro do N8N 
 
 <img width="1167" height="452" alt="image" src="https://github.com/user-attachments/assets/f3411e2c-8c73-4480-b7f8-9f1981e81a9a" />
 
