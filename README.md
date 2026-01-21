@@ -27,7 +27,8 @@ Eliminando envio manual, reduzindo erros operacionais e garantindo padronizaçã
 5. Para cada telefone, o **Python envia `wa_id + media_id` para o n8n**  
 6. O **n8n dispara o template aprovado** para cada contato via WhatsApp  
 
-📌 Resultado: envio automático, rastreável e em lote.
+Resultado: envio automático, rastreável e em lote.
+
 ---
 
 ## 🧩 Arquitetura (alto nível)
@@ -132,6 +133,7 @@ py -m pip install -r requirements.txt
 ### 4️⃣ Configurar variáveis de ambiente
 ```bash
 cp .env.example .env
+
 Preencha o .env com:
 -Caminho da planilha
 -Caminho da imagem
@@ -140,9 +142,10 @@ Credenciais (se necessário)
 ⚠️ Nunca versionar o .env.
 
 ### 5️⃣ Executar o disparo
+```bash
 py src/disparo_saudacao.py
-
 ---
+
 
 ## 🔐 Segurança
 
