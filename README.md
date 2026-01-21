@@ -141,11 +141,11 @@ ladydream-whatsapp/
 ├── n8n/
 │   ├── PostImagem/
 │   │   ├── PostImagem.json          # Workflow: upload da imagem
-│   │   └── README.md      # Documentação do workflow PostImagem
+│   │   └── README.md                # Documentação do workflow PostImagem
 │   │
 │   ├── MensageriaAtiva/
 │   │   ├── MensageriaAtiva.json     # Workflow: disparo do template
-│   │   └── README.md # Documentação do workflow MensageriaAtiva
+│   │   └── README.md                # Documentação do workflow MensageriaAtiva
 │
 ├── .env.example                     # Modelo de configuração
 ├── .gitignore                       # Proteção de segredos
