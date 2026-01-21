@@ -1,4 +1,4 @@
-# 🍰📲 Mensageria em Massa via WhatsApp com n8n e Python — LadyDream
+# 🍰📲 Mensageria em Massa via WhatsApp com n8n e Python
 
 Automação para **envio de mensagens em massa via WhatsApp**, utilizando **Python** e **n8n**, com foco no disparo de **mensagens de boas-vindas da Confeitaria LadyDream**, contendo **imagem no cabeçalho** e **template aprovado pela Meta**.
 
@@ -112,7 +112,7 @@ ladydream-whatsapp/
 - Template do WhatsApp previamente aprovado  
 
 ---
-
+______________________________________________________________________________
 ## 🚀 Como Executar
 
 ### 1️⃣ Acessar a pasta do projeto
@@ -144,8 +144,9 @@ Credenciais (se necessário)
 ### 5️⃣ Executar o disparo
 ```bash
 py src/disparo_saudacao.py
----
+_____________________________________________________________________________
 
+---
 
 ##  🔐 Segurança
 
